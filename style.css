@@ -1,0 +1,55 @@
+/* General common styles */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: Roboto, sans-serif;
+    min-height: 100vh;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header,
+.footer {
+    background-color: #1F2937;
+}
+
+/* Typography */
+
+.logo-name {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-herotext {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.header-subtext, a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* Header */
+
+.header,
+.header-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav,
+.header-logo,
+.header-links,
+.header-content {
+    display: flex;
+}
