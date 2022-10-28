@@ -9,6 +9,7 @@ body {
     display: flex;
     font-family: Roboto, sans-serif;
     min-height: 100vh;
+    justify-content: center;
 }
 
 ul, a {
@@ -21,7 +22,7 @@ ul, a {
     background-color: #1F2937;
 }
 
-/* Typography */
+/* Typography and colors*/
 
 .logo-name {
     font-size: 24px;
@@ -39,6 +40,12 @@ ul, a {
     color: #E5E7EB;
 }
 
+.header-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
 /* Header */
 
 .header,
@@ -50,6 +57,52 @@ ul, a {
 .header-nav,
 .header-logo,
 .header-links,
-.header-content {
+.header-content, ul {
     display: flex;
 }
+
+.header {
+    flex: 1;
+    max-width: 70%;
+    height: fit-content;
+    padding: 0 150px;
+}
+    /* Nav bar */
+        .header-nav {
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 0;
+        }
+
+        .header-logo{
+            align-items: center;
+        }
+
+        .logo-img {
+            height: 52px;
+        }
+
+        .header-links {
+            gap: 16px;
+        }
+    /* Content */
+        .header-content {
+            align-items: center;
+            gap: 80px;
+            padding: 50px 0;
+        }
+
+        .header-description {
+            gap: 15px;
+        }
+
+        .header-button {
+            width: fit-content;
+            border: 0;
+            border-radius: 8px;
+            padding: 10px 30px;
+        }
+
+        .header-img {
+            max-height: 250px;
+        }
