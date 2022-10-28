@@ -8,8 +8,8 @@
 body {
     display: flex;
     font-family: Roboto, sans-serif;
-    min-height: 100vh;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 ul, a {
@@ -46,7 +46,18 @@ ul, a {
     font-size: 18px;
 }
 
-/* Header */
+.menu-name {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.card {
+    color: #1F2937;
+    font-size: 18px;
+}
+
+/* Header section */
 
 .header,
 .header-description {
@@ -64,7 +75,7 @@ ul, a {
 .header {
     flex: 1;
     max-width: 70%;
-    height: fit-content;
+    max-height: fit-content;
     padding: 0 150px;
 }
     /* Nav bar */
@@ -99,10 +110,42 @@ ul, a {
         .header-button {
             width: fit-content;
             border: 0;
-            border-radius: 8px;
+            border-radius: 10px;
             padding: 10px 30px;
         }
 
         .header-img {
             max-height: 250px;
+            border: 3px solid #3882F6;
+            border-radius: 10px;
         }
+
+/* Menu section */
+
+.menu,
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-name {
+    padding: 40px 0;
+}
+
+.menu-cards {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.card {
+    gap: 15px;
+}
+
+.card-img {
+    height: 150px;
+    opacity: 0.8;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+}
