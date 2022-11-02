@@ -24,6 +24,12 @@ ul, a {
     background-color: #1F2937;
 }
 
+button {
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
 
 /* Typography and colors*/
 
@@ -43,10 +49,14 @@ ul, a {
     color: #E5E7EB;
 }
 
-.header-button {
-    background-color: #3882F6;
-    color: #F9FAF8;
+button {
+    color:#F9FAF8;
     font-size: 18px;
+    background-color: #3882F6;
+}
+
+.sign-up-button {
+    border: 2px solid #F9FAF8;
 }
 
 .menu-name {
@@ -77,6 +87,24 @@ ul, a {
     font-weight: 700;
 }
 
+.sign-up {
+    background-color: #3882F6;
+}
+
+.sign-up-text {
+    color: #E5E7EB;
+}
+
+.sign-up-text-bold {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.sign-up-text-light {
+    font-size: 18px;
+    font-weight: 100;
+}
+
 /* Header section */
 
 .header,
@@ -97,6 +125,7 @@ ul, a {
     max-width: 70%;
     max-height: fit-content;
     padding: 0 150px;
+    margin-bottom: 40px;
 }
     /* Nav bar */
         .header-nav {
@@ -128,10 +157,7 @@ ul, a {
         }
 
         .header-button {
-            width: fit-content;
             border: 0;
-            border-radius: 10px;
-            padding: 10px 30px;
         }
 
         .header-img {
@@ -149,6 +175,10 @@ ul, a {
     align-items: center;
 }
 
+.menu {
+    margin-bottom: 40px;
+}
+
 .menu-name {
     padding: 40px 0;
 }
@@ -156,7 +186,6 @@ ul, a {
 .menu-cards {
     display: flex;
     gap: 60px;
-    margin-bottom: 40px;
 }
 
 .card {
@@ -177,7 +206,7 @@ ul, a {
     flex-direction: column;
     flex: 1;
     max-width: 70%;
-    padding: 100px 150px;
+    padding: 50px 150px;
     justify-content: center;
 }
 
@@ -190,4 +219,16 @@ ul, a {
 .quote-author {
     display: flex;
     align-self: flex-end;
+}
+
+/* Sign up section */
+
+.sign-up {
+    display: flex;
+    padding: 40px 100px;
+    border-radius: 10px;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
