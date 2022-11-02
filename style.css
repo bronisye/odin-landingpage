@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
 /* General common styles */
 
 * {
@@ -22,6 +24,7 @@ ul, a {
     background-color: #1F2937;
 }
 
+
 /* Typography and colors*/
 
 .logo-name {
@@ -31,7 +34,7 @@ ul, a {
 
 .header-herotext {
     font-size: 48px;
-    font-weight: 900;
+    font-weight: 700;
     color: #F9FAF8;
 }
 
@@ -49,12 +52,29 @@ ul, a {
 .menu-name {
     color: #1F2937;
     font-size: 36px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .card {
     color: #1F2937;
     font-size: 18px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 24px;
+    color: #1F2937;
+    font-weight: 700;
 }
 
 /* Header section */
@@ -148,4 +168,26 @@ ul, a {
     opacity: 0.8;
     border: 3px solid #3882F6;
     border-radius: 10px;
+}
+
+/* Quote section */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 70%;
+    padding: 100px 150px;
+    justify-content: center;
+}
+
+.quote-text {
+    display: flex;
+    padding-bottom: 20px;
+    align-self: flex-start;
+}
+
+.quote-author {
+    display: flex;
+    align-self: flex-end;
 }
